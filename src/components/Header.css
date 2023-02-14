@@ -1,0 +1,21 @@
+header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(242, 255, 196);
+
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.d-flex > li {
+    padding: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+a:hover{
+    padding: 10px;
+    background-color: rgb(185, 231, 17); ;
+    border-radius: 5px;
+}
