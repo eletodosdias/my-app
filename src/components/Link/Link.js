@@ -1,7 +1,9 @@
+import './Link.css'
+
 const Link = () => {
     return(
         <>
-        <li> <a> Link </a> </li>
+            <a> Link </a>
         </>
     )
 }

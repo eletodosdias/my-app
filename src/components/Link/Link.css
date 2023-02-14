@@ -1,0 +1,10 @@
+a {
+    margin: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+a:hover{
+    padding: 5px;
+    background-color: rgb(185, 231, 17); ;
+    border-radius: 5px;
+}
