@@ -2,9 +2,16 @@ a {
     margin: 20px;
     list-style: none;
     cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    
 }
 a:hover{
     padding: 5px;
-    background-color: rgb(185, 231, 17); ;
+    background-color: rgb(177, 211, 54);
     border-radius: 5px;
+}
+a:active{
+    color: rgb(34, 33, 33);
+    background-color:  rgb(200, 255, 0); ;
 }
