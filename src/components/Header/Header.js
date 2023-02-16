@@ -5,12 +5,12 @@ const Header = () => {
 
         <header className='d-flex' id="link-iniziopagina" >
                 <Link link="link-iniziopagina" title="EleDI" />
-            <nav className='d-flex'> 
+            <div className='d-flex'> 
                 <Link link="link-chisono" title="Chi sono" />
                 <Link title="Skills" />
                 <Link title="Portfolio" />
                 <Link title="Contatti" />
-            </nav>
+            </div>
         </header>
     )
 }

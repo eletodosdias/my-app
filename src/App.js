@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './components/Header/Header'
-import Chisono from './components/Chisono/Chisono';
+import SezioneOrizzontale from './components/SezioneOrizzontale/SezioneOrizzontale';
 function App() {
   return (
     <>
       
       <Header />
-      <Chisono />
+      <SezioneOrizzontale section="Chi sono" sectionId="link-chisono" />
     </>
   );
 }
