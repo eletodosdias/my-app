@@ -4,12 +4,13 @@ const Header = () => {
     return ( 
 
         <header className='d-flex' id="link-iniziopagina" >
-                <Link link="link-iniziopagina" title="EleDI" />
+                <Link linkHref="#link-iniziopagina" title="EleDI" />
+                
             <div className='d-flex'> 
-                <Link link="link-chisono" title="Chi sono" />
-                <Link title="Skills" />
-                <Link title="Portfolio" />
-                <Link title="Contatti" />
+                <Link linkHref="#link-chisono" title="Chi sono" />
+                <Link linkHref="#link-skills"  title="Skills" />
+                <Link linkHref="#link-portfolio" title="Portfolio" />
+                <Link linkHref="#link-contatti"title="Contatti" />
             </div>
         </header>
     )
