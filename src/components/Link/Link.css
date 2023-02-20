@@ -7,11 +7,9 @@ a {
     
 }
 a:hover{
-    padding: 5px;
-    background-color: rgb(177, 211, 54);
-    border-radius: 5px;
+    color: #f4623a;
+    border-bottom: 2px solid #f4623a; ;
 }
-a:active{
-    color: rgb(34, 33, 33);
-    background-color:  rgb(200, 255, 0); ;
-}
+/* a:active{
+    
+} */

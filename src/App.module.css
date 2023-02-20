@@ -1,0 +1,24 @@
+.chisonoSection{
+    background-color: #f4623a;
+    color:#1a1c1f;
+}
+.chisonoDividerColor{
+    background-color: #1a1c1f;
+}
+.chisonoDescription{
+    text-align: center;
+    width: 66.66666667%;
+    color: #1a1c1f;
+}
+.skillsSection{
+    background-color: #fff;
+    color:#1a1c1f;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}

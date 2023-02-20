@@ -2,15 +2,13 @@ import './HorizontalSection.css'
 
 const HorizontalSection = (props) => {
     return (
-        <div id={props.sectionId} className="title" >
+        <div id={props.id} className={`container ${props.className}`} >
             <div >
-                <h2> {props.sectionTitle}</h2>
-                <hr />
+                <h2 className="sectionTitle"> {props.title}</h2>
+                <hr className="divider" />
             </div>
-           
-            <div>
-                
-            </div>
+
+            {props.children}
         </div>
     )
 }

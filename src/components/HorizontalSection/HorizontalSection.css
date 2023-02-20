@@ -1,16 +1,19 @@
-.title{
-    margin: 80px auto 0px ;
-    width: 80%;
-
+.container{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-h2{
-    padding: 20px;
+.sectionTitle{
+    font-size: 2rem;
+    padding: 0 20px;
     text-align: center;
 }
-hr{
-    width: 5%;
-    height: 3px;
-    border-radius: 2px;
-    margin:0px auto 20px auto;
-    background-color: rgb(177, 211, 54); 
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #1a1c1f;
+    border: 0;
 }
