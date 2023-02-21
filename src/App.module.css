@@ -2,9 +2,9 @@
     background-color: #f4623a;
     color:#1a1c1f;
 }
-.chisonoDividerColor{
+/* .chisonoDividerColor{
     background-color: #1a1c1f;
-}
+} */
 .chisonoDescription{
     text-align: center;
     width: 66.66666667%;
@@ -16,7 +16,9 @@
 }
 .flexRow{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    align-items: stretch;
+    justify-content: space-around;
 }
 .flexCol{
     display: flex;

@@ -9,6 +9,7 @@ const HorizontalSection = (props) => {
             </div>
 
             {props.children}
+            
         </div>
     )
 }
