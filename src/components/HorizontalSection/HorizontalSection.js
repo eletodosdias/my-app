@@ -1,15 +1,15 @@
 import './HorizontalSection.css'
 
-const HorizontalSection = (props) => {
+const HorizontalSection = ({id, className, title, children}) => {
     return (
-        <div id={props.id} className={`container ${props.className}`} >
+        <div id={id} className={`container ${className}`} >
             <div >
-                <h2 className="sectionTitle"> {props.title}</h2>
+                <h2 className="sectionTitle"> {title}</h2>
                 <hr className="divider" />
             </div>
 
-            {props.children}
-            
+            {children}
+
         </div>
     )
 }

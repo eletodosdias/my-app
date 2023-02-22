@@ -1,12 +1,11 @@
-a {
+.menuLink {
     margin: 20px;
     list-style: none;
     cursor: pointer;
     text-decoration: none;
     color: #fff;
-    
 }
-a:hover{
+.menuLink:hover{
     color: #f4623a;
     border-bottom: 2px solid #f4623a; ;
 }

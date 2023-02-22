@@ -1,11 +1,12 @@
 import './Card.css'
-const Card = (props) => {
+const Card = ({title, icon, alt, content}) => {
     return(
-        <div className='card' key={props.cards.id} >
-            <img src={props.cards.icon} alt={`Icona a forma di ${props.cards.alt}`} />
-            <h3>{props.cards.title}</h3>
-            <p className='cardContent'>{props.cards.content}</p>
+        <div className='card' >
+            <img src={icon} alt={`Icona a forma di ${alt}`} />
+            <h3>{title}</h3>
+            <p className='cardContent'>{content}</p>
         </div>
+        
     )
 }
 export default Card

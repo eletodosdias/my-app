@@ -1,9 +1,9 @@
 import './Link.css'
 
-const Link = (props) => {
+const Link = ({linkHref, title}) => {
     return(
         <>
-            <a href={props.linkHref} > {props.title} </a>
+            <a className="menuLink" href={linkHref} > {title} </a>
         </>
     )
 }
