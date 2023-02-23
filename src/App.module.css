@@ -1,6 +1,5 @@
 .chisonoSection{
     background-color: #f4623a;
-    color:#1a1c1f;
 }
 /* .chisonoDividerColor{
     background-color: #1a1c1f;
@@ -17,11 +16,13 @@
 }
 .flexRow{
     display: flex;
-    /* flex-direction: row; */
     align-items: stretch;
     justify-content: space-around;
 }
 .flexCol{
     display: flex;
     flex-direction: column;
+}
+.hardSkillsSection{
+    background-color:#2e2e2e;
 }

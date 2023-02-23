@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import HorizontalSection from './components/HorizontalSection/HorizontalSection';
 import Card from './components/Card/Card.js';
 import SectionButton from './components/SectionButton/SectionButton';
+import SkillScoreBar from './components/SkillScoreBar/SkillScoreBar';
 
 function App() {
   const chisonoDescription = "Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.Caratterialmente sono una persona molto disciplinata, motivata e attenta ai dettagli. Amo molto l'ordine, con perseveranza e studio sono orientata a perseguire gli obiettivi che mi pongo e che mi vengono preposti. Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.";
@@ -29,6 +30,15 @@ function App() {
       alt: 'cuore', 
       title: 'Intelligenza Emotiva', 
       content: 'Consapevolezza, motivazione, empatia e abilità nelle gestione delle relazioni sociali' }
+  ];
+
+  const subjects = [
+    { title: 'HTML5', value: '80%', color: '#e34c26' },
+    { title: 'CSS3', value: '80%', color: '#2965f1' },
+    { title: 'JavaScript', value: '70%', color: '#F0DB4F' },
+    { title: 'Angular', value: '65%', color: '#dd1b16' },
+    { title: 'React', value: '50%', color: '#61DBFB' },
+    { title: 'Git', value: '65%', color: '#F1502F' }
   ]
 
   return (
@@ -55,6 +65,21 @@ function App() {
             /> )
           }
         </div>
+      </HorizontalSection>
+
+      <HorizontalSection title="Hard Skills" id="link-hardSkills" className={styles.hardSkillsSection} >
+          <div >
+            {
+              subjects.map( (subject, index) => 
+                <SkillScoreBar 
+                  key={`subj_${index}`} 
+                  title={subject.title}
+                  value={subject.value}
+                  color={subject.color}
+                /> ) 
+            }
+          </div>
+             
       </HorizontalSection>
     </>
   );
