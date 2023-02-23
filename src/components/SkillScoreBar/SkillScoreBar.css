@@ -10,16 +10,15 @@
     flex-wrap: wrap;
 }
 .skillscore-bar{
+    width: 400px;
     height: 41px;
     border-radius: 20px;
-    width: 300px;
     background-color: #ebeaec;
     border: 2px solid #2e2e2e;
 }
 .skillscore{
     height: 29px;
     border-radius: 20px 8px 8px 20px;
-    /* background-color: #f4623a; */
     margin-top: 4px;
     margin-left: 4px;
 }

@@ -49,10 +49,10 @@ function App() {
         <div className={styles.chisonoDescription}>
           <p> {chisonoDescription} </p>
         </div>
-        <SectionButton linkHref="#link-skills" title="Altro ancora.." />
+        <SectionButton linkHref="#link-softskills" title="Altro ancora.." />
       </HorizontalSection>
 
-      <HorizontalSection title="Skills" id="link-skills" className={styles.skillsSection}  >
+      <HorizontalSection title="Skills" id="link-softskills" className={styles.skillsSection}  >
         <div className={styles.flexRow} >
 
           {cards.map( (card, index) => 
@@ -67,7 +67,7 @@ function App() {
         </div>
       </HorizontalSection>
 
-      <HorizontalSection title="Hard Skills" id="link-hardSkills" className={styles.hardSkillsSection} >
+      <HorizontalSection title="Hard Skills" id="link-hardskills" className={styles.hardSkillsSection} >
           <div >
             {
               subjects.map( (subject, index) => 

@@ -6,7 +6,8 @@ const Header = () => {
                 <Link linkHref="#link-iniziopagina" title="EleDI" />
             <div className='d-flex'> 
                 <Link linkHref="#link-chisono" title="Chi sono" />
-                <Link linkHref="#link-skills"  title="Skills" />
+                <Link linkHref="#link-softskills"  title="Soft Skills" />
+                <Link linkHref="#link-hardskills"  title="Hard Skills" />
                 <Link linkHref="#link-portfolio" title="Portfolio" />
                 <Link linkHref="#link-contatti"title="Contatti" />
             </div>
