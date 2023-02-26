@@ -5,7 +5,7 @@ import HorizontalSection from './components/HorizontalSection/HorizontalSection'
 import Card from './components/Card/Card.js';
 import SectionButton from './components/SectionButton/SectionButton';
 import SkillScoreBar from './components/SkillScoreBar/SkillScoreBar';
-import Project from './components/Project/Project';
+import ProjectCard from './components/ProjectCard/ProjectCard';
 
 function App() {
   const chisonoDescription = "Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.Caratterialmente sono una persona molto disciplinata, motivata e attenta ai dettagli. Amo molto l'ordine, con perseveranza e studio sono orientata a perseguire gli obiettivi che mi pongo e che mi vengono preposti. Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.";
@@ -44,29 +44,35 @@ function App() {
 
   const projects = [
     { title: 'HTML & CSS',
-      subtitle:'Layout1', 
+      subtitle:'Copia di layout (1)', 
       img: './assets/portfolio/layoutuno.PNG', 
-      alt:'layout' },
+      alt:'layout con HTML e CSS',
+      url: 'https://www.elenadias.it/progetti/page-booking' },
     { title: 'Bootstrap 5',
-      subtitle:'Layout1', 
+      subtitle:'Copia di layout (2)', 
       img: './assets/portfolio/enno.PNG', 
-      alt:'' },
+      alt:'layout eseguito con Boootstrap',
+      url: 'https://www.elenadias.it/progetti/page-booking' },
     { title: 'JavaScript',
-      subtitle:'Layout1', 
+      subtitle:'To Do List', 
       img: './assets/portfolio/todolist.PNG', 
-      alt:'layout' },
-    { title: 'HTML & CSS',
-      subtitle:'Layout1', 
+      alt:'to do list con JavaScript Vanilla',
+      url: 'https://www.elenadias.it/progetti/page-booking' },
+    { title: 'API HTML5 & jQuery',
+      subtitle:'Audio&Video Player', 
       img: './assets/portfolio/audiovideoplayer.PNG', 
-      alt:'layout' },
+      alt:'audio e video player con API html5',
+      url: 'https://www.elenadias.it/progetti/page-booking' },
     { title: 'Angular 11',
       subtitle:'Login Users', 
       img: './assets/portfolio/angular.PNG', 
-      alt:'layout' },
-    { title: 'HTML & CSS',
-      subtitle:'Layout1', 
+      alt:'login utilizzando angular 11',
+      url: 'https://www.elenadias.it/progetti/page-booking' },
+    { title: 'HTML, CSS & JS',
+      subtitle:'Page-Booking', 
       img: './assets/portfolio/pagebooking.PNG', 
-      alt:'layout' },
+      alt:'page booking HTML, CSS e JavaScript',
+      url: 'https://www.elenadias.it/progetti/page-booking' },
   ]
 
   return (
@@ -114,7 +120,7 @@ function App() {
         <div className={styles.flexRow} >
           {
             projects.map( (project, index) => 
-            <Project 
+            <ProjectCard 
               key={`project_${index}`} 
               title={project.title}
               subtitle={project.subtitle}
