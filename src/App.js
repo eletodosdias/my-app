@@ -5,6 +5,7 @@ import HorizontalSection from './components/HorizontalSection/HorizontalSection'
 import Card from './components/Card/Card.js';
 import SectionButton from './components/SectionButton/SectionButton';
 import SkillScoreBar from './components/SkillScoreBar/SkillScoreBar';
+import Project from './components/Project/Project';
 
 function App() {
   const chisonoDescription = "Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.Caratterialmente sono una persona molto disciplinata, motivata e attenta ai dettagli. Amo molto l'ordine, con perseveranza e studio sono orientata a perseguire gli obiettivi che mi pongo e che mi vengono preposti. Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.";
@@ -41,6 +42,33 @@ function App() {
     { title: 'Git', value: '65%', color: '#F1502F' }
   ]
 
+  const projects = [
+    { title: 'HTML & CSS',
+      subtitle:'Layout1', 
+      img: './assets/portfolio/layoutuno.PNG', 
+      alt:'layout' },
+    { title: 'Bootstrap 5',
+      subtitle:'Layout1', 
+      img: './assets/portfolio/enno.PNG', 
+      alt:'' },
+    { title: 'JavaScript',
+      subtitle:'Layout1', 
+      img: './assets/portfolio/todolist.PNG', 
+      alt:'layout' },
+    { title: 'HTML & CSS',
+      subtitle:'Layout1', 
+      img: './assets/portfolio/audiovideoplayer.PNG', 
+      alt:'layout' },
+    { title: 'Angular 11',
+      subtitle:'Login Users', 
+      img: './assets/portfolio/angular.PNG', 
+      alt:'layout' },
+    { title: 'HTML & CSS',
+      subtitle:'Layout1', 
+      img: './assets/portfolio/pagebooking.PNG', 
+      alt:'layout' },
+  ]
+
   return (
     <>
       <Header />
@@ -68,7 +96,7 @@ function App() {
       </HorizontalSection>
 
       <HorizontalSection title="Hard Skills" id="link-hardskills" className={styles.hardSkillsSection} >
-          <div >
+          <div>
             {
               subjects.map( (subject, index) => 
                 <SkillScoreBar 
@@ -80,6 +108,24 @@ function App() {
             }
           </div>
              
+      </HorizontalSection >
+
+      <HorizontalSection title="Portfolio" id="link-portfolio" className={styles.portfolioSection}>
+        <div className={styles.flexRow} >
+          {
+            projects.map( (project, index) => 
+            <Project 
+              key={`project_${index}`} 
+              title={project.title}
+              subtitle={project.subtitle}
+              img={project.img}
+              alt={project.alt}
+            /> )
+          }
+        </div>
+      </HorizontalSection>
+      <HorizontalSection title='Contatti' id="link-contatti" >
+
       </HorizontalSection>
     </>
   );

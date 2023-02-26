@@ -1,5 +1,6 @@
 header{
     background-color: #1a1c1f;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
     height: 70px;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */

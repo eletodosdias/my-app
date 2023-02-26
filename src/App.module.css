@@ -15,6 +15,7 @@
     display: flex;
     align-items: stretch;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .flexCol{
     display: flex;
@@ -22,4 +23,8 @@
 }
 .hardSkillsSection{
     background-color:#2e2e2e;
+}
+.portfolioSection{
+    background-color: #fff;
+    color:#1a1c1f;
 }
