@@ -6,6 +6,8 @@ import Card from './components/Card/Card.js';
 import SectionButton from './components/SectionButton/SectionButton';
 import SkillScoreBar from './components/SkillScoreBar/SkillScoreBar';
 import ProjectCard from './components/ProjectCard/ProjectCard';
+import ContactForm from './components/ContactForm/ContactForm';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const chisonoDescription = "Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.Caratterialmente sono una persona molto disciplinata, motivata e attenta ai dettagli. Amo molto l'ordine, con perseveranza e studio sono orientata a perseguire gli obiettivi che mi pongo e che mi vengono preposti. Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.";
@@ -73,7 +75,9 @@ function App() {
       img: './assets/portfolio/pagebooking.PNG', 
       alt:'page booking HTML, CSS e JavaScript',
       url: 'https://www.elenadias.it/progetti/page-booking' },
-  ]
+  ];
+
+  const contactsMsg = 'Per informazioni non esitare a contattarmi, compila questo breve form. Risponderò al più presto!'
 
   return (
     <>
@@ -86,7 +90,7 @@ function App() {
         <SectionButton linkHref="#link-softskills" title="Altro ancora.." />
       </HorizontalSection>
 
-      <HorizontalSection title="Skills" id="link-softskills" className={styles.skillsSection}  >
+      <HorizontalSection title="Soft Skills" id="link-softskills" className={styles.whiteHorizontalSection}  >
         <div className={styles.flexRow} >
 
           {cards.map( (card, index) => 
@@ -131,9 +135,15 @@ function App() {
           }
         </div>
       </HorizontalSection>
-      <HorizontalSection title='Contatti' id="link-contatti" >
+
+      <HorizontalSection title='Contatti' id="link-contatti" className={styles.whiteHorizontalSection} >
+        <p> {contactsMsg} </p>
+
+        <ContactForm />
 
       </HorizontalSection>
+      
+      <Footer />
     </>
   );
 }
