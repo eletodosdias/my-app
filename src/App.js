@@ -47,27 +47,27 @@ function App() {
       subtitle:'Copia di layout (1)', 
       img: './assets/portfolio/layoutuno.PNG', 
       alt:'layout con HTML e CSS',
-      url: 'https://www.elenadias.it/progetti/page-booking' },
+      url: 'https://www.elenadias.it/progetti/multipage/home.html' },
     { title: 'Bootstrap 5',
       subtitle:'Copia di layout (2)', 
       img: './assets/portfolio/enno.PNG', 
       alt:'layout eseguito con Boootstrap',
-      url: 'https://www.elenadias.it/progetti/page-booking' },
+      url: 'http://www.elenadias.it/progetti/sitoenno/' },
     { title: 'JavaScript',
       subtitle:'To Do List', 
       img: './assets/portfolio/todolist.PNG', 
       alt:'to do list con JavaScript Vanilla',
-      url: 'https://www.elenadias.it/progetti/page-booking' },
+      url: 'https://www.elenadias.it/progetti/todolist.html' },
     { title: 'API HTML5 & jQuery',
       subtitle:'Audio&Video Player', 
       img: './assets/portfolio/audiovideoplayer.PNG', 
       alt:'audio e video player con API html5',
-      url: 'https://www.elenadias.it/progetti/page-booking' },
+      url: 'http://www.elenadias.it/progetti/playermultimediale/progettoplayermultimediale.html' },
     { title: 'Angular 11',
       subtitle:'Login Users', 
       img: './assets/portfolio/angular.PNG', 
       alt:'login utilizzando angular 11',
-      url: 'https://www.elenadias.it/progetti/page-booking' },
+      url: 'https://www.elenadias.it/progetti/loginusers/' },
     { title: 'HTML, CSS & JS',
       subtitle:'Page-Booking', 
       img: './assets/portfolio/pagebooking.PNG', 
@@ -126,6 +126,7 @@ function App() {
               subtitle={project.subtitle}
               img={project.img}
               alt={project.alt}
+              url={project.url}
             /> )
           }
         </div>
