@@ -137,7 +137,7 @@ function App() {
       </HorizontalSection>
 
       <HorizontalSection title='Contatti' id="link-contatti" className={styles.whiteHorizontalSection} >
-        <p> {contactsMsg} </p>
+        <p className={styles.marginBottom} > {contactsMsg} </p>
 
         <ContactForm />
 
