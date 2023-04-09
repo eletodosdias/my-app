@@ -19,3 +19,19 @@ h6, h5, h4, h3, h2, h1 {
   font-weight: 500;
   line-height: 1.6;
 }
+
+button, input, select, textarea {
+  font-family:"Merriweather Sans", "Segoe UI", "Helvetica Neue", Arial;
+}
+::-webkit-input-placeholder {
+  font-family:"Merriweather Sans", "Segoe UI", "Helvetica Neue", Arial;
+}
+:-moz-placeholder {
+  font-family:"Merriweather Sans", "Segoe UI", "Helvetica Neue", Arial;
+}
+::-moz-placeholder {
+  font-family:"Merriweather Sans", "Segoe UI", "Helvetica Neue", Arial;
+}
+:-ms-input-placeholder {
+  font-family:"Merriweather Sans", "Segoe UI", "Helvetica Neue", Arial;
+}

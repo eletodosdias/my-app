@@ -9,7 +9,6 @@ form{
     font-size: 1rem;
     line-height: 1.5;
     color: #212529;
-    background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
@@ -26,6 +25,7 @@ form{
 textarea.form-control {
     height: 8rem;
 }
+
 .submit{
     padding: 1.25rem 2.25rem;
     font-size: 0.85rem;

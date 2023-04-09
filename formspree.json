@@ -1,0 +1,12 @@
+
+{
+    "forms": {
+      "contactForm": {
+        "name": "ContactForm",
+        "actions": [{ 
+            "type": "email", 
+            "to": "elenadias@ymail.com" 
+        }]
+      }
+    }
+}  

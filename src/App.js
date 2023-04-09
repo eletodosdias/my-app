@@ -9,6 +9,8 @@ import ProjectCard from './components/ProjectCard/ProjectCard';
 import ContactForm from './components/ContactForm/ContactForm';
 import Footer from './components/Footer/Footer';
 
+//import { FormspreeProvider } from '@formspree/react';
+
 function App() {
   const chisonoDescription = "Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.Caratterialmente sono una persona molto disciplinata, motivata e attenta ai dettagli. Amo molto l'ordine, con perseveranza e studio sono orientata a perseguire gli obiettivi che mi pongo e che mi vengono preposti. Sono molto entusiasta e volenterosa ad apprendere il più possibile su questo immenso regno della programmazione.";
 
@@ -139,7 +141,7 @@ function App() {
       <HorizontalSection title='Contatti' id="link-contatti" className={styles.whiteHorizontalSection} >
         <p className={styles.marginBottom} > {contactsMsg} </p>
 
-        <ContactForm />
+          <ContactForm  />
 
       </HorizontalSection>
       
